@@ -41,6 +41,14 @@ h2{font-family:var(--display);font-weight:600;font-size:22px;margin:0;line-heigh
 .food li{background:var(--accent-soft);color:var(--fg);font-size:14px;padding:4px 10px;border-radius:6px}
 .note{font-size:14px;color:var(--muted);margin:0;border-top:1px solid var(--line);padding-top:10px}
 .note b{color:var(--fg);font-weight:600}
+.jump{display:flex;gap:8px;margin-top:6px}
+.jump a{font-weight:600;font-size:15px;color:var(--accent);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:6px 16px;border-radius:999px}
+.jump a:focus-visible,.jump a:hover{border-color:var(--accent)}
+h3.section{font-family:var(--display);font-weight:700;font-size:28px;margin:16px 0 0;padding-top:12px;border-top:2px solid var(--accent);scroll-margin-top:16px}
+h4.sub-section{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:4px 0 -6px;font-weight:600}
+.also{background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:8px;font-size:15px}
+.also p{margin:0}
+.also ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
 footer{font-size:13px;color:var(--muted)}
 </style>
 </head>
@@ -48,10 +56,13 @@ footer{font-size:13px;color:var(--muted)}
 
 <div class="wrap">
   <header>
-    <span class="eyebrow">Monday, Nov 2 · Lunch</span>
+    <span class="eyebrow">Monday, Nov 2</span>
     <h1>Where are we eating?</h1>
-    <p class="sub">Seven options open today, with what they serve and today's hours. Menus are pieced together from Google reviews, not official menus.</p>
+    <p class="sub">Everything open today for lunch and dinner, with what they serve and today's hours. Menus are pieced together from Google reviews, not official menus.</p>
+    <nav class="jump"><a href="#lunch">Lunch</a><a href="#dinner">Dinner</a></nav>
   </header>
+
+  <h3 class="section" id="lunch">Lunch</h3>
 
   <article class="place">
     <div class="top">
@@ -149,6 +160,219 @@ footer{font-size:13px;color:var(--muted)}
     <ul class="food"><li>Home-cooked hot meal</li><li>Changes each week</li></ul>
     <p class="note">Volunteer-run sit-down lunch, open to everyone. It also feeds people in need, so leave a donation if we go.</p>
   </article>
+
+  <h3 class="section" id="dinner">Dinner</h3>
+  <h4 class="sub-section">On the island</h4>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Bill's Prime Seafood &amp; Steaks</h2><p class="kind">Upscale seafood and steaks · Main St</p></div>
+      <span class="rating">★ 4.4 <small>(2,491)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip">Open 4 – 9 PM</span></dd>
+      <dt>Where</dt><dd>4040 Main St</dd>
+      <dt>Phone</dt><dd>757-336-5831</dd>
+    </dl>
+    <ul class="food"><li>Cioppino</li><li>Shrimp scampi</li><li>Scallop &amp; shrimp brochettes</li><li>Flounder</li><li>Steaks</li><li>Crab appetizers</li></ul>
+    <p class="note">The highest-volume rating on the island. Big portions, gluten-free items marked on the menu. Pricier. Reservations recommended.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Blackfin Island Grill</h2><p class="kind">Seafood, steaks, tapas · Maddox Blvd</p></div>
+      <span class="rating">★ 4.5 <small>(392)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip">Open until 8 PM</span></dd>
+      <dt>Where</dt><dd>7085 Maddox Blvd</dd>
+      <dt>Phone</dt><dd>757-336-7000</dd>
+    </dl>
+    <ul class="food"><li>Prime rib</li><li>Seafood chowder</li><li>Crab dip</li><li>Shrimp &amp; fish tacos</li><li>Brick-oven pizza</li><li>Crab basket</li><li>Flank steak</li></ul>
+    <p class="note">Reviewers call it the best food on the island. Closes earliest of the sit-down spots. Reservations recommended.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Captain Zack's Seafood</h2><p class="kind">Seafood · Deep Hole Rd</p></div>
+      <span class="rating">★ 4.4 <small>(1,642)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip">Open until 9 PM</span></dd>
+      <dt>Where</dt><dd>4422 Deep Hole Rd</dd>
+      <dt>Phone</dt><dd>757-336-3788</dd>
+    </dl>
+    <ul class="food"><li>Raw oysters</li><li>Steamed seafood combos</li><li>Snow crab legs</li><li>Fish &amp; flounder tacos</li><li>Fried calamari</li><li>Clam strips</li><li>Po'boys</li></ul>
+    <p class="note">Big portions. No reservations for parties of 2, and there can be a wait. Delivers.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Steamers</h2><p class="kind">Seafood &amp; sports bar · Maddox Blvd</p></div>
+      <span class="rating">★ 4.2 <small>(1,661)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip">Open 4 – 9 PM</span></dd>
+      <dt>Where</dt><dd>6251 Maddox Blvd</dd>
+      <dt>Phone</dt><dd>757-336-5300</dd>
+    </dl>
+    <ul class="food"><li>Steamer pots (shrimp, crab, clams, mussels)</li><li>Oysters</li><li>Cream of crab soup</li><li>Crab dip</li><li>Hush puppies</li><li>Wings</li><li>Daily specials (fried chicken, prime rib)</li></ul>
+    <p class="note">Good value. The steamer pot gets the most praise. Island Creamery is next door for dessert.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Ropewalk</h2><p class="kind">Waterfront seafood &amp; bar · Marlin St</p></div>
+      <span class="rating">★ 4.0 <small>(3,561)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip">Open 4 – 10 PM</span></dd>
+      <dt>Where</dt><dd>6262 Marlin St</dd>
+      <dt>Phone</dt><dd>757-336-0512</dd>
+    </dl>
+    <ul class="food"><li>Crab cake sandwich</li><li>Delmarva burger</li><li>Jerk chicken</li><li>Old Bay wings</li><li>Oysters</li><li>Flounder roulade</li><li>Pasta</li></ul>
+    <p class="note">Best setting: on the water, sand under the tables, live music. Food reviews are mixed.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>The Pearl</h2><p class="kind">Seafood with a view · East Side</p></div>
+      <span class="rating">★ 3.7 <small>(521)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip">Open 5 – 11 PM</span></dd>
+      <dt>Where</dt><dd>7452 East Side Rd</dd>
+      <dt>Phone</dt><dd>757-336-5644</dd>
+    </dl>
+    <ul class="food"><li>Crab cakes</li><li>Tuna tacos</li><li>Local oysters</li><li>Shrimp &amp; bacon wedge salad</li><li>Cinnamon-sugar donuts with ice cream</li></ul>
+    <p class="note">Marsh and lighthouse views. Reviews are split, but recent ones say a new chef turned it around. Reservations recommended.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>MK Urban Food</h2><p class="kind">Mexican food truck · Maddox Blvd</p></div>
+      <span class="rating">★ 4.4 <small>(22)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip">Dinner tonight</span></dd>
+      <dt>Where</dt><dd>6761 Maddox Blvd (by Steve's II)</dd>
+      <dt>Phone</dt><dd>443-754-5758</dd>
+    </dl>
+    <ul class="food"><li>Birria tacos</li><li>Quesabirria</li><li>House sauces</li></ul>
+    <p class="note">Reviewers say authentic and made to order. Open late (reviews mention 11 PM). Darts on site.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Teaguer's Pub</h2><p class="kind">Pub &amp; dive bar · Chicken City Rd</p></div>
+      <span class="rating">★ 4.1 <small>(560)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip">Open until 2 AM</span></dd>
+      <dt>Where</dt><dd>5030 Chicken City Rd</dd>
+      <dt>Phone</dt><dd>757-336-7237</dd>
+    </dl>
+    <ul class="food"><li>Thick hand-formed burgers</li><li>Fried seafood platters</li><li>Pizza</li><li>Fried pickles</li></ul>
+    <p class="note">Locals' bar with a backyard. Cheap. Food can be slow when it's busy.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Asian Express</h2><p class="kind">Chinese takeout · Maddox Blvd</p></div>
+      <span class="rating">★ 4.0 <small>(258)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip">Open until 9:30 PM</span></dd>
+      <dt>Where</dt><dd>6758 Maddox Blvd</dd>
+      <dt>Phone</dt><dd>757-336-1588</dd>
+    </dl>
+    <ul class="food"><li>Lo mein</li><li>Szechuan beef</li><li>Sweet &amp; sour pork</li><li>Veggie and spicy options</li></ul>
+    <p class="note">Huge portions for the price. One review reported hair in the food, so it's a gamble on cleanliness.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Maria's Family Restaurant</h2><p class="kind">Family restaurant · Maddox Blvd</p></div>
+      <span class="rating">★ 3.8 <small>(1,386)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip">Open until 10 PM</span></dd>
+      <dt>Where</dt><dd>6505 Maddox Blvd</dd>
+      <dt>Phone</dt><dd>757-336-5040</dd>
+    </dl>
+    <ul class="food"><li>Crab pizza</li><li>Lasagna &amp; pasta</li><li>Salad bar</li><li>Seafood</li><li>Burgers</li></ul>
+    <p class="note">Inconsistent. Some love it, others got overcooked seafood. The crab pizza is the safe order.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Steve's II Deli</h2><p class="kind">Subs, takeout · Maddox Blvd</p></div>
+      <span class="rating">★ 4.4 <small>(147)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip">Open until 10 PM</span></dd>
+      <dt>Where</dt><dd>6761 Maddox Blvd</dd>
+      <dt>Phone</dt><dd>757-336-7474</dd>
+    </dl>
+    <ul class="food"><li>Italian hoagie</li><li>Turkey sub</li><li>Buffalo chicken sub</li><li>Beer selection</li></ul>
+    <p class="note">Counter deli inside a gas station. Great subs to take back to the room.</p>
+  </article>
+
+  <h4 class="sub-section">Mainland</h4>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Ocean Deli</h2><p class="kind">Burgers, pizza, subs · Wallops (10 min)</p></div>
+      <span class="rating">★ 4.5 <small>(890)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip">Open until 9 PM</span></dd>
+      <dt>Where</dt><dd>33591 Chincoteague Rd</dd>
+      <dt>Phone</dt><dd>757-824-4111</dd>
+    </dl>
+    <ul class="food"><li>Burgers</li><li>Pizza</li><li>Strombolis</li><li>Turkey club</li><li>Prime rib quesadilla</li><li>Strawberry shortcake</li></ul>
+    <p class="note">Down-to-earth spot in an old gas station. One recent review says quality has slipped.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Steam Bros.</h2><p class="kind">Seafood boil truck · New Church (20 min)</p></div>
+      <span class="rating">★ 4.5 <small>(31)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip warn">Open, call for hours</span></dd>
+      <dt>Where</dt><dd>Lankford Hwy, New Church</dd>
+      <dt>Phone</dt><dd>757-894-8672</dd>
+    </dl>
+    <ul class="food"><li>Steamed blue crabs</li><li>Crab legs</li><li>Shrimp</li><li>Seafood pots with sausage, corn &amp; potatoes</li></ul>
+    <p class="note">Call ahead to order. Huge portions. Check that the seasoning is in the bag before you leave.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Don Valerio's</h2><p class="kind">Mexican · Onley (45 min)</p></div>
+      <span class="rating">★ 4.3 <small>(476)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Tonight</dt><dd><span class="chip">Open until 9 PM</span></dd>
+      <dt>Where</dt><dd>Lankford Hwy, Onley</dd>
+      <dt>Phone</dt><dd>757-789-5226</dd>
+    </dl>
+    <ul class="food"><li>Shrimp dishes</li><li>Fajitas &amp; Mexican plates</li><li>Guacamole</li><li>Margaritas</li></ul>
+    <p class="note">Excellent service and fresh food, but it's a long drive for dinner.</p>
+  </article>
+
+  <div class="also">
+    <p><b>Also open tonight</b> (details in the lunch section above):</p>
+    <ul>
+      <li>Famous Pizza, until 9 PM</li>
+      <li>Ledo Pizza, until 9 PM</li>
+      <li>Smash Bros. in New Church</li>
+      <li>Off the Rails in Parksley, until midnight</li>
+      <li>ChincoTiki, but call first (Google says closed Mondays)</li>
+      <li>Mr. Baldy's, but call first (the local list says breakfast and lunch only today; Google says open until 10)</li>
+    </ul>
+  </div>
 
   <footer>Hours from Google and the "A Girl Loving Food on Chincoteague" list (updated 10/27). Hours can change without notice.</footer>
 </div>
