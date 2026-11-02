@@ -1,0 +1,147 @@
+<title>Chincoteague Lunch Picks</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Layout: single column of stacked place entries, scannable on a phone, status chip up top of each */
+:root{
+  --bg:#f3f6f6; --surface:#ffffff; --fg:#14262b; --muted:#5a6d72; --line:#d6e0e1;
+  --accent:#0f6e7a; --accent-soft:#e0f0f1;
+  --ok:#2f7d4f; --ok-soft:#e3f2e8; --warn:#9a6411; --warn-soft:#fbefd8;
+  --display:"Fraunces", Georgia, serif; --body:"Figtree", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1a1d; --surface:#16252a; --fg:#e4eef0; --muted:#97abb0; --line:#26393e;
+  --accent:#5cc3cf; --accent-soft:#16363b; --ok:#7bd19c; --ok-soft:#173326; --warn:#f0bd6a; --warn-soft:#3a2d14; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1a1d; --surface:#16252a; --fg:#e4eef0; --muted:#97abb0; --line:#26393e;
+  --accent:#5cc3cf; --accent-soft:#16363b; --ok:#7bd19c; --ok-soft:#173326; --warn:#f0bd6a; --warn-soft:#3a2d14; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:680px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));display:flex;flex-direction:column;gap:20px}
+header{display:flex;flex-direction:column;gap:6px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(28px,7vw,38px);line-height:1.1;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:0;max-width:60ch}
+.place{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 12px}
+h2{font-family:var(--display);font-weight:600;font-size:22px;margin:0;line-height:1.2}
+.kind{color:var(--muted);font-size:14px;margin:2px 0 0}
+.rating{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.rating small{font-weight:400;color:var(--muted)}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:15px;margin:0}
+.facts dt{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.05em;padding-top:2px}
+.facts dd{margin:0;min-width:0;font-variant-numeric:tabular-nums}
+.chip{display:inline-block;font-size:13px;font-weight:600;padding:2px 10px;border-radius:999px;background:var(--ok-soft);color:var(--ok)}
+.chip.warn{background:var(--warn-soft);color:var(--warn)}
+.food{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.food li{background:var(--accent-soft);color:var(--fg);font-size:14px;padding:4px 10px;border-radius:6px}
+.note{font-size:14px;color:var(--muted);margin:0;border-top:1px solid var(--line);padding-top:10px}
+.note b{color:var(--fg);font-weight:600}
+footer{font-size:13px;color:var(--muted)}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Monday, Nov 2 · Lunch</span>
+    <h1>Where are we eating?</h1>
+    <p class="sub">Seven options open today, with what they serve and today's hours. Menus are pieced together from Google reviews, not official menus.</p>
+  </header>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Famous Pizza &amp; Sub Shop</h2><p class="kind">Pizza and subs · on the island</p></div>
+      <span class="rating">★ 4.4 <small>(1,696)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Today</dt><dd><span class="chip">Open 11 AM – 9 PM</span></dd>
+      <dt>Where</dt><dd>6689 Maddox Blvd</dd>
+      <dt>Phone</dt><dd>757-336-1316</dd>
+    </dl>
+    <ul class="food"><li>Pizza (spicy Italian, Hawaiian)</li><li>Cheesesteaks</li><li>Crab jalapeño poppers</li><li>Subs</li><li>Greek salad with chicken</li></ul>
+    <p class="note">Mostly takeout, but has indoor seating and an enclosed porch. Delivers. Good with food allergies.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Ledo Pizza</h2><p class="kind">Pizza chain · on the island</p></div>
+      <span class="rating">★ 4.1 <small>(1,027)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Today</dt><dd><span class="chip">Open 11 AM – 9 PM</span></dd>
+      <dt>Where</dt><dd>6477 Maddox Blvd</dd>
+      <dt>Phone</dt><dd>757-336-6597</dd>
+    </dl>
+    <ul class="food"><li>Pizza (hot honey is the favorite)</li><li>Breadsticks</li><li>Wings</li><li>Subs, steak and cheese</li><li>Calzone special (~$7)</li><li>Bruschetta</li></ul>
+    <p class="note">Dependable chain pizza. Wings run heavy on sauce.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Mr. Baldy's</h2><p class="kind">Family diner · on the island</p></div>
+      <span class="rating">★ 4.1 <small>(1,227)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Today</dt><dd><span class="chip">Open 6 AM – 10 PM</span></dd>
+      <dt>Where</dt><dd>3441 Ridge Rd</dd>
+      <dt>Phone</dt><dd>757-336-1198</dd>
+    </dl>
+    <ul class="food"><li>Breakfast all day</li><li>Sandwiches</li><li>Fried seafood platters</li><li>Clams and oysters</li><li>Flounder</li></ul>
+    <p class="note">Breakfast is the strength, with big portions. Seafood dinners get mixed reviews, and add-ons are pricey.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>ChincoTiki</h2><p class="kind">Caribbean bar &amp; grill · on the water</p></div>
+      <span class="rating">★ 4.4 <small>(624)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Today</dt><dd><span class="chip warn">Unconfirmed, call first</span></dd>
+      <dt>Where</dt><dd>4121 Main St</dd>
+      <dt>Phone</dt><dd>757-990-5985</dd>
+    </dl>
+    <ul class="food"><li>Jerk chicken</li><li>Shrimp po'boy</li><li>Wings</li><li>Fried pickles</li><li>Grilled chicken</li><li>Veggie burger</li><li>Cocktails and beer</li></ul>
+    <p class="note"><b>Hours conflict:</b> the local list says open for lunch and dinner, but Google says closed Mondays. Casual waterfront spot with outdoor seating, a heated enclosed area, and a dog-friendly section.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Smash Bros.</h2><p class="kind">Burger food truck · New Church, mainland</p></div>
+      <span class="rating">★ 4.6 <small>(89)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Today</dt><dd><span class="chip">Open for lunch</span></dd>
+      <dt>Where</dt><dd>Lankford Hwy, New Church (about 20 min)</dd>
+      <dt>Phone</dt><dd>757-894-8490</dd>
+    </dl>
+    <ul class="food"><li>Smash burgers with Smash Sauce</li><li>Cheesesteaks</li><li>Honey sriracha wings</li><li>Boneless bites</li><li>Fish &amp; chips</li><li>Grilled shrimp tacos</li><li>Fried pickles</li><li>Twisted fries</li></ul>
+    <p class="note">The island truck is closed today; only the New Church spot is open. Exact hours there aren't listed (the island truck runs 11–8). Online ordering for pickup. Steam Bros., their seafood-boil truck, is at the same spot.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Off the Rails</h2><p class="kind">American, made from scratch · Parksley, mainland</p></div>
+      <span class="rating">★ 4.5 <small>(116)</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Today</dt><dd><span class="chip">Open 11 AM – midnight</span></dd>
+      <dt>Where</dt><dd>18497 Dunne Ave, Parksley (about 30 min)</dd>
+      <dt>Phone</dt><dd>757-665-7822</dd>
+    </dl>
+    <ul class="food"><li>Hand-battered chicken</li><li>Fish &amp; chips (grouper)</li><li>Fresh-cut fries</li><li>Coconut shrimp</li><li>Spinach artichoke dip</li><li>Hoagies</li><li>Salads</li></ul>
+    <p class="note">Clean, friendly, fair prices. Worth it if we're heading down the shore anyway.</p>
+  </article>
+
+  <article class="place">
+    <div class="top">
+      <div><h2>Manna Café</h2><p class="kind">Free community lunch · Christ United Methodist</p></div>
+      <span class="rating"><small>Donations</small></span>
+    </div>
+    <dl class="facts">
+      <dt>Today</dt><dd><span class="chip warn">11 AM – 1 PM only</span></dd>
+      <dt>Where</dt><dd>6253 Church St</dd>
+    </dl>
+    <ul class="food"><li>Home-cooked hot meal</li><li>Changes each week</li></ul>
+    <p class="note">Volunteer-run sit-down lunch, open to everyone. It also feeds people in need, so leave a donation if we go.</p>
+  </article>
+
+  <footer>Hours from Google and the "A Girl Loving Food on Chincoteague" list (updated 10/27). Hours can change without notice.</footer>
+</div>
